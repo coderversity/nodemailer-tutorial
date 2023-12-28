@@ -53,19 +53,19 @@ const HomePage = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-control">
           <label htmlFor="firstName">First Name</label>
-          <input type="text" id='firstName' name='firstName' placeholder='Enter first name...' />
+          <input type="text" id='firstName' name='firstName' placeholder='Enter first name...' onChange={handleInputChange} />
         </div>
         <div className="form-control">
           <label htmlFor="lastName">Last Name</label>
-          <input type="text" id='lastName' name='lastName' placeholder='Enter last name...' />
+          <input type="text" id='lastName' name='lastName' placeholder='Enter last name...' onChange={handleInputChange} />
         </div>
         <div className="form-control">
           <label htmlFor="email">Email</label>
-          <input type="email" id='email' name='email' placeholder='Enter email...' />
+          <input type="email" id='email' name='email' placeholder='Enter email...' onChange={handleInputChange} />
         </div>
         <div className="form-control">
           <label htmlFor="message">Message</label>
-          <textarea id='message' name="message" cols="10" rows="10" placeholder='Enter message...'></textarea>
+          <textarea id='message' name="message" cols="10" rows="10" placeholder='Enter message...' onChange={handleInputChange}></textarea>
         </div>
         <button className='btn' type='submit'>Send Message</button>
       </form>
